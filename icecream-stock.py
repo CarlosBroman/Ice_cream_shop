@@ -1,15 +1,31 @@
-import pandas as pd
+helados = ["Chocolate", "Vainilla", "Banana Split"]
 
-print("hello to the Terraza Miramar")
-nombre = input("¿Cómo te llamas? ")
-helado = input(f"Hola, {nombre}, ¿Qué helado acabas de poner?")
-
-data = {
-    "Nombre" : [nombre],
-    "Helado" : [helado]
+cantidad_por_sabor = {
+    "Chocolate" : 0,
+    "Vainilla" : 3,
+    "Banana Split" : 0
 }
 
-df = pd.DataFrame(data)
-
-print("\nDataFrame:")
-print(df)
+while True:
+    sabor = input("¿Qué sabor? ")
+    
+    if sabor in helados:
+        cantidad = int(input("¿Qué cantidad? "))
+        operacion = input("¿Qué operación (entrada / salida) ? ")
+        
+        if sabor in cantidad_por_sabor:
+            if operacion == "salida":
+                cantidad_por_sabor[sabor] -= cantidad
+            elif operacion == "entrada":
+                cantidad_por_sabor[sabor] += cantidad
+        else:
+            cantidad_por_sabor[sabor] = cantidad
+    
+        print(f"Sabor: {sabor}, Cantidad: {cantidad}, Operación: {operacion}")
+        another_entry = input("¿Es correcto? (s/n): ")
+        if another_entry.lower() == 's':
+            break
+    else: 
+        print("Este sabor no existe")
+    
+print(cantidad_por_sabor)
