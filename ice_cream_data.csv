@@ -1,7 +1,19 @@
-ID,Helado,Cantidad,Operacion,Stock
-0,Chocolate,2,entrada,2
-1,Vainilla,4,entrada,-4
-2,Dulce de Leche,10,entrada,10
-3,Banana Split,1,salida,-1
-4,Chocolate,5,entrada,5
-5,Dulce de Leche,2,entrada,12
+ID,Helado,Cantidad,Operacion,Stock,Fecha,Hora,Hora numero
+0,Chocolate,2,Entrada,2,2023-08-15,14:02:37,50597
+1,Vainilla,3,Entrada,3,2023-08-15,14:02:37,50597
+2,Chocolate,2,Entrada,4,2023-08-15,14:03:17,50597
+3,Vainilla,1,Salida,2,2023-08-15,14:03:17,50597
+4,Pistacho,1,Entrada,1,2023-08-15,14:03:17,50597
+5,Pistacho,1,Entrada,2,2023-08-15,14:04:28,50668
+6,Chocolate,2,Entrada,6,2023-08-15,14:09:30,50970
+7,Vainilla,1,Salida,1,2023-08-15,14:09:30,50970
+8,Merengue,3,Entrada,3,2023-08-15,14:09:30,50970
+9,Pistacho,1,Entrada,3,2023-08-15,14:09:30,50970
+10,Chocolate,1,Entrada,7,2023-08-15,14:10:24,51024
+11,Merengue,2,Entrada,5,2023-08-15,14:10:24,51024
+12,Vainilla,1,Salida,0,2023-08-15,14:10:24,51024
+13,Pistacho,1,Entrada,4,2023-08-15,14:10:24,51024
+14,Chocolate,3,Entrada,10,2023-08-15,14:19:32,51572
+15,Vainilla,2,Salida,-2,2023-08-15,14:19:32,51572
+16,Merengue,10,Entrada,15,2023-08-15,14:19:32,51572
+17,Pistacho,1,Salida,3,2023-08-15,14:19:32,51572
