@@ -12,3 +12,9 @@ ID,Helado,Cantidad,Operacion,Stock,Fecha,Hora,Hora numero
 10,Chocolate,3,Entrada,11,2023-08-16,11:26:10,41170
 11,Chocolate,4,Entrada,15,2023-08-16,11:39:04,41944
 12,Pistacho,1,Entrada,5,2023-08-16,11:39:09,41949
+13,Chocolate,4,Entrada,19,2023-08-16,11:57:30,43050
+14,Maracuya,0,Nuevo sabor,0,2023-08-16,12:05:22,43522
+15,Maracuya,2,Entrada,2,2023-08-16,12:05:29,43529
+16,Pistacho,2,Salida,3,2023-08-16,12:06:36,43596
+17,Pistacho,1,Entrada,4,2023-08-16,12:06:55,43615
+18,Dulce de leche,0,Nuevo sabor,0,2023-08-16,12:07:09,43629

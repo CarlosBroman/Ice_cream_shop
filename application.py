@@ -76,6 +76,40 @@ def open_add_entry_window():
     
     tk.Button(add_entry_window, text="Registrar", command=submit_entry).pack(pady=10)
 
+def create_new_flavour():
+    def submit_flavour():
+        global existing_df
+        now = datetime.datetime.now()
+        id = len(existing_df["ID"].tolist())
+        helado = helado_var.get().capitalize()
+        stock = 0
+            
+        new_entry = {
+            "ID": id,
+            "Helado": helado,
+            "Cantidad": 0,
+            "Operacion": "Nuevo sabor",
+            "Stock": stock,
+            "Fecha": now.strftime("%Y-%m-%d"),
+            "Hora": now.strftime("%H:%M:%S"),
+            "Hora numero": now.hour * 3600 + now.minute * 60 + now.second
+        }
+        
+        existing_df = save_to_csv(pd.concat([existing_df, pd.DataFrame([new_entry])]))
+        messagebox.showinfo("Movimiento", "Entrada registrada exitosamente.")
+        add_flavour_window.destroy()
+        
+    add_flavour_window = tk.Toplevel(root)
+    add_flavour_window.title("Registrar Sabor")
+    
+    tk.Label(add_flavour_window, text="Registrar Sabor", font=("Helvetica", 16)).pack(pady=10)
+    
+    helado_var = tk.StringVar()
+    tk.Label(add_flavour_window, text="Nuevo Sabor:").pack()
+    tk.Entry(add_flavour_window, textvariable=helado_var).pack()
+            
+    tk.Button(add_flavour_window, text="Registrar", command=submit_flavour).pack(pady=10)
+    
 def plot_graph(existing_df):
     plt.figure(figsize=(10, 6))
 
@@ -111,6 +145,8 @@ def handle_program_choice(choice):
     
     if choice == "Movimiento":
         open_add_entry_window()
+    elif choice == "Nuevo":
+        create_new_flavour()
     elif choice == "Grafico":
         plot_graph(existing_df)
     elif choice == "Stocks":
@@ -135,6 +171,9 @@ def main():
 
     button_movimiento = tk.Button(root, text="Registrar Movimiento", command=lambda: handle_program_choice("Movimiento"))
     button_movimiento.pack()
+    
+    button_sabor = tk.Button(root, text="Nuevo Sabor", command=lambda: handle_program_choice("Nuevo"))
+    button_sabor.pack()
 
     button_grafico = tk.Button(root, text="Mostrar Gráfico", command=lambda: handle_program_choice("Grafico"))
     button_grafico.pack()
