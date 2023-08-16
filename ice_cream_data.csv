@@ -18,3 +18,43 @@ ID,Helado,Cantidad,Operacion,Stock,Fecha,Hora,Hora numero
 16,Pistacho,2,Salida,3,2023-08-16,12:06:36,43596
 17,Pistacho,1,Entrada,4,2023-08-16,12:06:55,43615
 18,Dulce de leche,0,Nuevo sabor,0,2023-08-16,12:07:09,43629
+19,Chocolate,2,Entrada,21,2023-08-16,15:34:11,56051
+20,Chocolate,1,Entrada,22,2023-08-16,15:34:43,56083
+21,Chocolate,1,Entrada,23,2023-08-16,15:34:48,56088
+22,Chocolate,1,Entrada,24,2023-08-16,15:34:48,56088
+23,Chocolate,3,Entrada,27,2023-08-16,15:34:51,56091
+24,Maracuya,5,Entrada,7,2023-08-16,15:34:57,56097
+25,Chocolate,1,,27,2023-08-16,15:37:18,56238
+26,Chocolate,1,Salida,26,2023-08-16,15:37:28,56248
+27,Chocolate,1,,26,2023-08-16,15:38:43,56323
+28,Chocolate,1,Entrada,27,2023-08-16,15:38:59,56339
+29,Chocolate,4,Entrada,31,2023-08-16,15:39:30,56370
+30,Chocolate,1,Entrada,32,2023-08-16,15:39:58,56398
+31,Chocolate,4,Entrada,36,2023-08-16,15:41:24,56484
+32,Maracuya,1,Salida,6,2023-08-16,15:41:30,56490
+33,Dulce de leche,5,Entrada,5,2023-08-16,15:41:39,56499
+34,Chocolate,2,Salida,34,2023-08-16,15:42:10,56530
+35,Chocolate,1,Salida,33,2023-08-16,15:42:15,56535
+36,Chocolate,1,Salida,32,2023-08-16,15:42:20,56540
+37,Chocolate,1,Entrada,33,2023-08-16,15:42:23,56543
+38,Chocolate,5,Salida,28,2023-08-16,16:00:52,57652
+39,Chocolate,5,Salida,23,2023-08-16,16:00:55,57655
+40,Chocolate,1,Salida,22,2023-08-16,16:01:06,57666
+41,Chocolate,1,Salida,21,2023-08-16,16:01:11,57671
+42,Chocolate,1,Salida,20,2023-08-16,16:01:16,57676
+43,Chocolate,1,Salida,19,2023-08-16,16:01:20,57680
+44,Chocolate,1,Salida,18,2023-08-16,16:01:50,57710
+45,Chocolate,3,Entrada,21,2023-08-16,16:13:38,58418
+46,Chocolate,3,Entrada,24,2023-08-16,16:34:24,59664
+47,Maracuya,1,Entrada,7,2023-08-16,16:43:32,60212
+48,Chocolate,2,Entrada,26,2023-08-16,16:45:42,60342
+49,Chocolate,2,Entrada,28,2023-08-16,16:45:47,60347
+50,Chocolate,5,Entrada,33,2023-08-16,16:50:40,60640
+51,Chocolate,5,Entrada,38,2023-08-16,16:50:43,60643
+52,Chocolate,1,Entrada,39,2023-08-16,16:50:45,60645
+53,Chocolate,1,Salida,38,2023-08-16,16:50:47,60647
+54,Pistacho,1,Salida,3,2023-08-16,16:50:49,60649
+55,Fresa,0,Nuevo sabor,0,2023-08-16,16:50:58,60658
+56,Fresa,1,Entrada,1,2023-08-16,16:51:04,60664
+57,Chocolate,1,Entrada,39,2023-08-16,17:38:24,63504
+58,banana,0,Nuevo sabor,0,2023-08-16,17:39:34,63574
