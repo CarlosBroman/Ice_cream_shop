@@ -15,7 +15,7 @@ dates = existing_df["Fecha"].tolist()
 horas = existing_df["Hora"].tolist()
 horas_numero = existing_df["Hora numero"].tolist()
 
-programa = input("¿Qué quieres: movimiento / grafico / stocks ").capitalize()
+programa = input("¿Qué quieres: movimiento / grafico / stocks? ").capitalize()
 
 if programa == "Movimiento":
     now = datetime.datetime.now()
