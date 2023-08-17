@@ -58,3 +58,8 @@ ID,Helado,Cantidad,Operacion,Stock,Fecha,Hora,Hora numero
 56,Fresa,1,Entrada,1,2023-08-16,16:51:04,60664
 57,Chocolate,1,Entrada,39,2023-08-16,17:38:24,63504
 58,banana,0,Nuevo sabor,0,2023-08-16,17:39:34,63574
+59,Fruta del dragon,0,Nuevo sabor,0,2023-08-17,21:06:01,75961
+60,Fruta del dragon,2,Entrada,2,2023-08-17,21:06:15,75975
+61,Mango,0,Nuevo sabor,0,2023-08-17,21:17:22,76642
+62,Banana split,0,Nuevo sabor,0,2023-08-17,21:17:29,76649
+63,Banana split,1,Entrada,1,2023-08-17,21:17:50,76670

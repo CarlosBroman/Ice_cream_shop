@@ -25,7 +25,6 @@ class icecream(App):
     def build(self):
         layout = BoxLayout(orientation='vertical')
 
-        # Add the Label widget
         label = Label(
             text="Heladeria Terraza Miramar",
             font_size=64,
@@ -33,7 +32,6 @@ class icecream(App):
         )
         layout.add_widget(label)
 
-        # Add the "Generar movimiento" button
         generar_button = Button(
             text="Generar movimiento",
             font_size=32,
@@ -42,7 +40,6 @@ class icecream(App):
         generar_button.bind(on_release=self.generate_movement)
         layout.add_widget(generar_button)
 
-        # Add the "Añadir nuevo sabor" button
         nuevo_sabor_button = Button(
             text="Añadir nuevo sabor",
             font_size=32,
@@ -51,7 +48,6 @@ class icecream(App):
         nuevo_sabor_button.bind(on_release=self.add_new_flavor)
         layout.add_widget(nuevo_sabor_button)
 
-        # Add the "Stocks" button
         stocks_button = Button(
             text="Stocks",
             font_size=32,
@@ -216,24 +212,30 @@ class icecream(App):
         self.show_message_popup("Movimiento", message)
 
     def show_stocks(self, instance):
-        stock_info = ""
+        stock_info = "STOCK\n\n"
+        restock_info ="EMPTY STOCK\n\n"
         unique_helados = existing_df['Helado'].unique()
 
         for helado in unique_helados:
             last_stock = existing_df[existing_df["Helado"] == helado]["Stock"].iloc[-1]
-            stock_info += f"{helado}: {last_stock}\n"
+            if last_stock >1:
+                stock_info += f"{helado}: {last_stock}\n"
+            else:
+                restock_info += f"{helado}: {last_stock}\n"
         
         
-        self.show_stock_popup(stock_info)
         
-    def show_stock_popup(self, stock_info):
-        popup_content = GridLayout(cols = 1)
+        self.show_stock_popup(stock_info, restock_info)
+        
+    def show_stock_popup(self, stock_info, restock_info):
+        popup_content = GridLayout(cols = 2)
         popup_content.add_widget(Label(text=stock_info))
+        popup_content.add_widget(Label(text=restock_info))
         close_button = Button(text="Close", size_hint=(None, None), size=(100, 50))
         close_button.bind(on_release=self.dismiss_popup)
         popup_content.add_widget(close_button)
         
-        self.popup = Popup(title="Stocks", content=popup_content, size_hint=(None, None), size=(300, 300))
+        self.popup = Popup(title="Stocks", content=popup_content, size_hint=(None, None), size=(400, 400))
         self.popup.open()
         
     def dismiss_popup(self, instance):
