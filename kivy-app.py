@@ -11,10 +11,15 @@ from kivy.uix.textinput import TextInput
 import pandas as pd
 import datetime
 
-csv_file_name = "ice_cream_data.csv"
-existing_df = pd.read_csv(csv_file_name)
+CSV_FILE_NAME = "ice_cream_data.csv"
+NEW_FLAVOR_OPERATION = "Nuevo sabor"
+EMPTY_STOCK_THRESHOLD = 1
+
+existing_df = pd.read_csv(CSV_FILE_NAME)
 
 class icecream(App):
+    
+# CREATE LAYOUT OF INITIAL SCREEN    
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
         self.selected_helado = None
@@ -23,41 +28,37 @@ class icecream(App):
         self.helado_text_input = None
     
     def build(self):
-        layout = BoxLayout(orientation='vertical')
+        layout = self.create_layout()
+        return layout
 
-        label = Label(
+    def create_layout(self):
+        layout = BoxLayout(orientation='vertical')
+        self.add_title(layout)
+        self.add_buttons(layout)
+        return layout
+
+    def add_title(self, layout):
+        title = Label(
             text="Heladeria Terraza Miramar",
             font_size=64,
             color=(0.92, 0.45, 0)
         )
-        layout.add_widget(label)
+        layout.add_widget(title)
 
-        generar_button = Button(
-            text="Generar movimiento",
-            font_size=32,
-            size=(100, 50)
-        )
-        generar_button.bind(on_release=self.generate_movement)
-        layout.add_widget(generar_button)
+    def add_buttons(self, layout):
+        buttons = [
+            ("Generar movimiento", self.generate_movement),
+            ("Añadir nuevo sabor", self.add_new_flavor),
+            ("Stocks", self.show_stocks)
+        ]
+        for button_text, callback in buttons:
+            button = Button(text=button_text, font_size=32, size=(100, 50))
+            button.bind(on_release=callback)
+            layout.add_widget(button)
 
-        nuevo_sabor_button = Button(
-            text="Añadir nuevo sabor",
-            font_size=32,
-            size=(100, 50)
-        )
-        nuevo_sabor_button.bind(on_release=self.add_new_flavor)
-        layout.add_widget(nuevo_sabor_button)
+# ADD FUNCTIONALITY TO BUTTONS
 
-        stocks_button = Button(
-            text="Stocks",
-            font_size=32,
-            size=(100, 50)
-        )
-        stocks_button.bind(on_release=self.show_stocks)
-        layout.add_widget(stocks_button)
-
-        return layout
-
+# GENERATE MOVEMENT BUTTON
     def generate_movement(self, instance):
         self.show_movement_popup()
         
@@ -167,6 +168,8 @@ class icecream(App):
         
     def update_button_text(self, button, new_text):
        button.text = new_text
+
+# ADD FLAVOUR BUTTON
   
     def add_new_flavor(self, instance):
         self.add_new_flavour_popup()
@@ -243,8 +246,8 @@ class icecream(App):
     
     @staticmethod
     def save_to_csv(dataframe):
-        csv_file_name = "ice_cream_data.csv"
-        dataframe.to_csv(csv_file_name, index=False)
+        CSV_FILE_NAME = "ice_cream_data.csv"
+        dataframe.to_csv(CSV_FILE_NAME, index=False)
         return dataframe
 
 app = icecream()
