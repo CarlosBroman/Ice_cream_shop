@@ -63,3 +63,74 @@ ID,Helado,Cantidad,Operacion,Stock,Fecha,Hora,Hora numero
 61,Mango,0,Nuevo sabor,0,2023-08-17,21:17:22,76642
 62,Banana split,0,Nuevo sabor,0,2023-08-17,21:17:29,76649
 63,Banana split,1,Entrada,1,2023-08-17,21:17:50,76670
+64,Chocolate,1,Entrada,40,2023-08-17,21:40:39,78039
+65,banana,1,Entrada,1,2023-08-17,21:40:48,78048
+66,Chocolate,3,Entrada,43,2023-08-17,21:47:01,78421
+67,Pineapple,0,Nuevo sabor,0,2023-08-17,21:47:22,78442
+68,Pineapple,1,Entrada,1,2023-08-17,21:47:31,78451
+69,Pineapple,1,Entrada,2,2023-08-17,21:47:32,78452
+70,Chocolate,1,Entrada,44,2023-08-17,21:49:06,78546
+71,Chocolate,1,Entrada,45,2023-08-17,21:51:15,78675
+72,Chocolate,1,Entrada,46,2023-08-17,21:52:10,78730
+73,Chocolate,1,Entrada,47,2023-08-17,21:52:55,78775
+74,Chocolate,1,Entrada,48,2023-08-17,21:53:24,78804
+75,Chocolate,3,Entrada,51,2023-08-17,21:53:50,78830
+76,Chocolate,2,Entrada,53,2023-08-17,21:56:29,78989
+77,Chocolate,1,Entrada,54,2023-08-17,21:58:55,79135
+78,Pistacho,2,Entrada,5,2023-08-17,21:59:52,79192
+79,hipopotamo,0,Nuevo sabor,0,2023-08-17,22:01:17,79277
+80,Kinder,0,Nuevo sabor,0,2023-08-17,22:11:12,79872
+81,Kinder Bueno,0,Nuevo sabor,0,2023-08-17,22:14:54,80094
+82,Chocolate,1,Entrada,55,2023-08-17,22:34:08,81248
+83,Oreo,0,Nuevo sabor,0,2023-08-17,22:34:16,81256
+84,Cookies,0,Nuevo sabor,0,2023-08-17,22:35:04,81304
+85,Menta,0,Nuevo sabor,0,2023-08-17,22:36:37,81397
+86,Menta,4,Entrada,4,2023-08-17,22:36:45,81405
+87,Maxibon,0,Nuevo sabor,0,2023-08-17,22:40:04,81604
+88,Maxibon,2,Entrada,2,2023-08-17,22:40:14,81614
+89,Chocolate,1,Entrada,56,2023-08-17,22:51:09,82269
+90,Chocolate,1,Entrada,57,2023-08-17,22:52:01,82321
+91,Chocolate,1,Entrada,58,2023-08-17,22:56:40,82600
+92,Chocolate,2,Entrada,60,2023-08-17,23:07:48,83268
+93,mokachino,0,Nuevo sabor,0,2023-08-17,23:12:25,83545
+94,moka,0,Nuevo sabor,0,2023-08-17,23:43:04,85384
+95,Vainilla,2,,7,2023-08-18,00:19:48,1188
+96,Vainilla,1,Salida,6,2023-08-18,00:34:51,2091
+97,Chocolate,1,Entrada,61,2023-08-18,01:31:48,5508
+98,Chocolate,1,Entrada,62,2023-08-18,01:33:51,5631
+99,Vainilla,1,Entrada,7,2023-08-18,01:33:54,5634
+100,Vainilla,3,Entrada,10,2023-08-18,01:34:05,5645
+101,Vainilla,5,Entrada,15,2023-08-18,01:34:09,5649
+102,Fruta del dragon,5,Entrada,7,2023-08-18,01:34:11,5651
+103,Chocolate,5,Entrada,67,2023-08-18,01:36:04,5764
+104,Fruta del dragon,4,Salida,3,2023-08-18,01:36:40,5800
+105,Dulce de leche,1,Salida,4,2023-08-18,01:38:49,5929
+106,Vainilla,6,Entrada,21,2023-08-18,01:39:59,5999
+107,Chocolate,1,Entrada,68,2023-08-18,01:42:27,6147
+108,Chocolate,1,Entrada,69,2023-08-18,01:42:31,6151
+109,Dulce de leche,5,Entrada,9,2023-08-18,01:43:05,6185
+110,Maracuya,4,Entrada,11,2023-08-18,01:44:46,6286
+111,Chocolate,2,Entrada,71,2023-08-18,01:45:18,6318
+112,Chocolate,3,Salida,68,2023-08-18,01:46:23,6383
+113,Pistacho,1,Salida,4,2023-08-18,01:47:05,6425
+114,Pistacho,1,Salida,3,2023-08-18,01:47:13,6433
+115,Pistacho,3,Entrada,6,2023-08-18,01:47:32,6452
+116,Vainilla,4,Entrada,25,2023-08-18,01:49:51,6591
+117,Maracuya,6,Salida,5,2023-08-18,01:49:58,6598
+118,Vainilla,8,Entrada,33,2023-08-18,01:50:03,6603
+119,Vainilla,4,Salida,29,2023-08-18,01:50:57,6657
+120,Chocolate,4,Entrada,72,2023-08-18,01:51:47,6707
+121,Chocolate,1,Salida,71,2023-08-18,01:53:55,6835
+122,Vainilla,4,Salida,25,2023-08-18,01:54:48,6888
+123,Vainilla,1,Entrada,26,2023-08-18,01:56:30,6990
+124,Pistacho,1,Salida,6,2023-08-18,01:57:02,7022
+125,Pistacho,3,Entrada,9,2023-08-18,01:59:16,7156
+126,Pistacho,3,Salida,6,2023-08-18,01:59:19,7159
+127,Pistacho,1,Salida,5,2023-08-18,02:01:17,7277
+128,Pistacho,1,Salida,4,2023-08-18,02:02:27,7347
+129,Chocolate,4,Salida,67,2023-08-18,02:06:29,7589
+130,Pistacho,1,Salida,3,2023-08-18,02:10:03,7803
+131,Dulce de leche,5,Entrada o salida,9,2023-08-18,02:10:08,7808
+132,Pistacho,7,Entrada,10,2023-08-18,02:10:57,7857
+133,Maracuya,2,Entrada,7,2023-08-18,02:11:46,7906
+134,Pistacho,5,Salida,5,2023-08-18,02:13:09,7989
