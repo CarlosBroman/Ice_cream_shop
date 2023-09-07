@@ -36,7 +36,7 @@ operaciones = existing_df["Operacion"].tolist()
 stocks = existing_df["Stock"].tolist()
 dates = existing_df["Fecha"].tolist()
 horas = existing_df["Hora"].tolist()
-# Group the DataFrame by "Helado" and sum the "Stock" values for each flavorespañ
+
 ice_cream_stock = existing_df.groupby("Helado")["Stock"].sum().reset_index()
 
 program = input(options).capitalize()
@@ -102,7 +102,6 @@ if program == "Movimiento" or program == "Movement":
 
 
 elif program == "Grafico" or program =="Chart":
-
     plt.figure(figsize=(8, 8))
     plt.pie(ice_cream_stock["Stock"], labels=ice_cream_stock["Helado"], autopct="%1.1f%%", startangle=140)
     plt.title("Ice Cream Stocks")
