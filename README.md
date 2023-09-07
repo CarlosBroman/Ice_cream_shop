@@ -15,3 +15,6 @@ The application has to:
 
 ### Version 2:
     Using the package tkinter a basic GUI is created.
+
+### Version 3:
+    The GUI is updated using the Kivy package.
