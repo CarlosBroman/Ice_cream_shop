@@ -12,3 +12,6 @@ The application has to:
 
 ### Version 1:
     The interactivity is provided within the terminal.
+
+### Version 2:
+    Using the package tkinter a basic GUI is created.
