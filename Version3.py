@@ -101,8 +101,7 @@ class icecream(App):
                 "Operacion": operacion,
                 "Stock": stock,
                 "Fecha": now.strftime("%Y-%m-%d"),
-                "Hora": now.strftime("%H:%M:%S"),
-                "Hora numero": now.hour * 3600 + now.minute * 60 + now.second
+                "Hora": now.strftime("%H:%M:%S")
             }
             
             self.existing_df = pd.concat([self.existing_df, pd.DataFrame([new_entry])])

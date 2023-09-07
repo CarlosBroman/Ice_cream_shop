@@ -1,9 +1,3 @@
 ID,Helado,Cantidad,Operacion,Stock,Fecha,Hora
-0,Chocolate,1,Entrada,1,2023-09-07,18:32:44
-1,Chocolate,1,Entrada,2,2023-09-07,18:38:34
-2,Vainilla,2,Entrada,2,2023-09-07,18:39:59
-3,Cacahuete,1,Entrada,1,2023-09-07,18:40:59
-4,Cacahuete,2,Salida,-1,2023-09-07,19:01:07
-5,Dulce de leche,0,Nuevo sabor,0,2023-09-07,19:01:15
-6,Dulce de leche,1,Entrada,1,2023-09-07,19:01:23
-7,Cacahuete,3,Entrada,2,2023-09-07,19:01:55
+0,Chocolate,0,Nuevo sabor,0,2023-09-07,19:24:35
+1,Chocolate,2,Entrada,2,2023-09-07,19:24:42
