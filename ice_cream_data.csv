@@ -1,1 +1,5 @@
-ID,Helado,Cantidad,Operacion,Stock,Fecha,Hora numero,Hora
+ID,Helado,Cantidad,Operacion,Stock,Fecha,Hora
+0,Chocolate,1,Entrada,1,2023-09-07,18:32:44
+1,Chocolate,1,Entrada,2,2023-09-07,18:38:34
+2,Vainilla,2,Entrada,2,2023-09-07,18:39:59
+3,Cacahuete,1,Entrada,1,2023-09-07,18:40:59
