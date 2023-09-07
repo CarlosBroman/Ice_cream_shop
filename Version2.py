@@ -13,7 +13,8 @@ operaciones = existing_df["Operacion"].tolist()
 stocks = existing_df["Stock"].tolist()
 dates = existing_df["Fecha"].tolist()
 horas = existing_df["Hora"].tolist()
-horas_numero = existing_df["Hora numero"].tolist()
+
+ice_cream_stock = existing_df.groupby("Helado")["Stock"].sum().reset_index()
 
 def save_to_csv(dataframe):
     csv_file_name = "ice_cream_data.csv"
@@ -48,7 +49,6 @@ def open_add_entry_window():
             "Stock": stock,
             "Fecha": now.strftime("%Y-%m-%d"),
             "Hora": now.strftime("%H:%M:%S"),
-            "Hora numero": now.hour * 3600 + now.minute * 60 + now.second
         }
         
         existing_df = save_to_csv(pd.concat([existing_df, pd.DataFrame([new_entry])]))
@@ -92,7 +92,6 @@ def create_new_flavour():
             "Stock": stock,
             "Fecha": now.strftime("%Y-%m-%d"),
             "Hora": now.strftime("%H:%M:%S"),
-            "Hora numero": now.hour * 3600 + now.minute * 60 + now.second
         }
         
         existing_df = save_to_csv(pd.concat([existing_df, pd.DataFrame([new_entry])]))
@@ -111,24 +110,10 @@ def create_new_flavour():
     tk.Button(add_flavour_window, text="Registrar", command=submit_flavour).pack(pady=10)
     
 def plot_graph(existing_df):
-    plt.figure(figsize=(10, 6))
-
-    unique_helados = existing_df['Helado'].unique()
-
-    for helado in unique_helados:
-        helado_df = existing_df[existing_df['Helado'] == helado]
-        plt.step(helado_df['Hora numero'], helado_df['Stock'], where='post', label=helado)
-
-    plt.xlabel('Time')
-    plt.ylabel('Stock')
-    plt.title('Stock vs Time')
-
-    hora_labels = existing_df.groupby('Hora numero')['Hora'].first().reset_index(drop=True)
-    hora_ticks = existing_df['Hora numero'].unique()
-    plt.xticks(hora_ticks, hora_labels, rotation=45)
-
-    plt.legend()
-    plt.tight_layout()
+    plt.figure(figsize=(8, 8))
+    plt.pie(ice_cream_stock["Stock"], labels=ice_cream_stock["Helado"], autopct="%1.1f%%", startangle=140)
+    plt.title("Ice Cream Stocks")
+    plt.axis("equal")  # Equal aspect ratio ensures that pie is drawn as a circle.
     plt.show()
 
 def display_stocks(existing_df):
